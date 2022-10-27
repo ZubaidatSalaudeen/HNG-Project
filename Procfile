@@ -1,1 +1,1 @@
-web: slackDetail.wsgi
+web: gunicorn slackDetail.wsgi
