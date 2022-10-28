@@ -27,10 +27,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1:8000', '.herokuapp.com']
 
-CORS_ORIGIN_ALLOW_ALL = False
-CORS_ORIGIN_WHITELIST = ['127.0.0.1:8000', '.herokuapp.com']
-# Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -58,6 +54,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'slackDetail.urls'
 
+CORS_ORIGIN_ALLOW_ALL = True
 
 TEMPLATES = [
     {
