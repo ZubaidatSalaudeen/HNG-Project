@@ -9,4 +9,4 @@ def Detail(request, *args, **kwargs):
     header = {"Access-Control-Allow-Origin":"*"}
     detail = SlackDetail.objects.all()
     serializer = DetailSerializer(detail, many=True)
-    return JsonResponse(serializer.data, safe=False)
+    return JsonResponse(serializer.data, safe=False, headers=header)
